@@ -24,9 +24,17 @@ public class Main {
         hdrT3.setIsbn("111-234-2134-26-245");
         hdrT3.setAuthor("J.R. Tolkien");
 
-        Book[] arrayBooks = {hdrT1, hdrT2, hdrT3};
+        Book dkH = new Book("Der kleine Hobbit", "J.R. Tolkien", "34434-3232-45");
 
-        System.out.println(Arrays.toString(arrayBooks));
+        Book[] arrayBooks = {hdrT1, hdrT2, hdrT3, dkH};
+        library.setBooks(arrayBooks);
+        System.out.println(library);
+
+        Book dkH2 = new Book("Der kleine Hobbit Teil 2", "J.R. Tolkien", "34434-332-45-89");
+
+        library.addBookToLibrary(dkH2);
+        System.out.println("--------");
+        System.out.println(library);
     }
 
 }
