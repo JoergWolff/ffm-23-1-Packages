@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class Library {
 
-    Book[] books;
+    private Book[] books;
 
     public Book[] getBooks() {
         return books;
